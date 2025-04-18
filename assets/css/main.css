@@ -171,7 +171,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 90px;
+  max-height: 55px;
   margin-right: 8px;
 }
 
@@ -268,11 +268,6 @@ body.mobile-nav-active .navmenu .mobile-logo {
 
 /* Dispositivos medianos (tablets o pantallas intermedias) */
 
-@media (max-width: 1250px) {
-  .header .logo img {
-    max-height: 70px;
-  }
-}
 
 @media (max-width: 992px) {
   .header .logo img {
@@ -2712,6 +2707,11 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+#service-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .service-details .service-box {
   background-color: var(--surface-color);
   padding: 20px;
@@ -2842,6 +2842,46 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+/* Tabs horizontales móviles */
+#mobile-tabs {
+  scrollbar-width: thin;
+  scrollbar-color: #00EEFF #323946;
+  padding-bottom: 5px;
+}
+
+#mobile-tabs::-webkit-scrollbar {
+  height: 6px;
+}
+
+#mobile-tabs::-webkit-scrollbar-thumb {
+  background-color: #00EEFF;
+  border-radius: 10px;
+}
+
+/* Cards services */
+
+/* Icono */
+.card i {
+  color: #00EEFF !important;
+}
+
+/* Ajustar la distancia entre el icono y el título */
+.card-title {
+  margin-top: 15px; /* Añadir más espacio entre el icono y el título */
+}
+
+/* Animación de zoom suave */
+.card {
+  transition: transform 0.3s ease-in-out; /* Transición suave en ambos estados */
+  background-color: #323946; /* Nuevo color de fondo */
+  color: #ffffff; /* Asegura que el texto sea legible */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+}
+
 
 /*--------------------------------------------------------------
 # Starter Section Section

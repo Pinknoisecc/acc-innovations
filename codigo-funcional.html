@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ACC INNOVATIONS | Diseño y desarrollo web</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="service-details-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+      <!-- Logo visible siempre (escritorio + móvil, fuera del menú hamburguesa) -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo.webp" alt="Logo de barra de navegación Acc Innovations"> 
+      </a>
+  
+      <!-- Menú de navegación -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <!-- Logo y subtítulo solo en móviles -->
+          <li class="mobile-logo d-xl-none">
+            <div class="d-flex flex-column align-items-start">
+              <img src="assets/img/logo.webp" alt="Logo de Acc Innovations" class="logo-img">
+              <span class="logo-subtitle">Diseñamos, creamos y <br> posicionamos tu marca</span>
+            </div>
+          </li>
+  
+          <li><a href="../#hero" class="active">Home</a></li>
+          <li><a href="../#about">Nosotros</a></li>
+          <li><a href="../#why-choose-us">¿Por qué escogernos?</a></li>
+          <li><a href="../#services">Servicios</a></li>
+          <li><a href="../#portfolio-tabs">Portafolio</a></li>
+          <li><a href="../#contact">Contacto</a></li>
+  
+          <!-- Información de contacto al final -->
+          <li class="contact-info-section d-xl-none">
+            <h5 class="contact-title">Información de contacto</h5>
+            <div class="contact-list">
+              <div class="contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                <span>contacto@accinnovations.cl</span>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-telephone-fill"></i>
+                <span>+56 9 3107 7232</span>
+              </div>
+            </div>
+
+              <!-- Red social -->
+  <div class="social-section mt-3">
+    <h5 class="contact-title">Síguenos en redes</h5>
+    <div class="social-icons d-flex gap-3 mt-2">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+
+          </li>
+        </ul>
+  
+        <!-- Icono del menú hamburguesa -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+  
+      <!-- Botón de cotización solo visible en escritorio -->
+      <a class="btn-getstarted d-none d-md-block" href="index.html#about">Solicitar cotización</a>
+  
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Diseño y desarrollo web a tu medida</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Diseño y desarrollo web</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+<!-- Service Details Section -->
+<section id="service-details" class="service-details section">
+  <div class="container">
+    <div class="row gy-5">
+
+      <!-- Tabs móviles (scroll horizontal) -->
+      <div class="d-lg-none mb-3 overflow-auto" data-aos="fade-up" data-aos-delay="50">
+        <div class="nav nav-pills flex-nowrap" id="mobile-tabs" role="tablist" style="white-space: nowrap; gap: 10px;">
+          <a class="nav-link active" data-bs-toggle="pill" href="#incluido" role="tab">¿Qué incluyen nuestros sitios webs?</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#corporativos" role="tab">Corporativos</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#landing" role="tab">Landing</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#portafolio" role="tab">Portafolios</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#ecommerce" role="tab">E-commerce</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#catalogo" role="tab">Catálogo</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#onepage" role="tab">One Page</a>
+          <a class="nav-link" data-bs-toggle="pill" href="#reservas" role="tab">Reservas</a>
+        </div>
+      </div>
+
+      <!-- Menú lateral (solo en escritorio) -->
+      <div class="col-lg-4 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100">
+        <div class="position-sticky" style="top: 150px; z-index: 1;">
+          <div class="service-box sticky-menu">
+            <h4>Lo que necesitas saber</h4>
+            <div class="services-list nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="incluido-tab" data-bs-toggle="pill" href="#incluido" role="tab">¿Qué incluyen nuestros sitios webs?</a>
+              <a class="nav-link" id="corporativos-tab" data-bs-toggle="pill" href="#corporativos" role="tab">Corporativos o Institucionales</a>
+              <a class="nav-link" id="landing-tab" data-bs-toggle="pill" href="#landing" role="tab">Landing Pages</a>
+              <a class="nav-link" id="portafolio-tab" data-bs-toggle="pill" href="#portafolio" role="tab">Portafolios</a>
+              <a class="nav-link" id="ecommerce-tab" data-bs-toggle="pill" href="#ecommerce" role="tab">Tiendas Online (E-commerce)</a>
+              <a class="nav-link" id="catalogo-tab" data-bs-toggle="pill" href="#catalogo" role="tab">Catálogo Online sin Pago</a>
+              <a class="nav-link" id="onepage-tab" data-bs-toggle="pill" href="#onepage" role="tab">Sitio One Page</a>
+              <a class="nav-link" id="reservas-tab" data-bs-toggle="pill" href="#reservas" role="tab">Sistemas de Reservas o Citas</a>
+            </div>
+          </div>
+                  
+        </div>
+      </div>
+
+      <!-- Contenido dinámico -->
+      <div class="col-lg-8 ps-lg-5 tab-content" id="v-pills-tabContent" data-aos="fade-up" data-aos-delay="200">
+
+        <!--Incluído-->
+        <div class="tab-pane fade show active" id="incluido">
+          <h3><i class="bi bi-check-circle"></i> ¿Qué incluyen nuestros sitios webs?</h3>
+          <p class="lead">Todo lo que necesitas para tener una presencia online efectiva.</p>
+
+          <div class="row g-4 text-center mt-4">
+          <!-- Diseño personalziado -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-palette-fill display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Diseño personalizado</h6>
+                <p class="card-text small">Adaptado a tu identidad corporativa, colores, logo y estilo.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 100% responsivo -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-phone-fill display-5 text-primary mb-3"></i>
+                <h6 class="card-title">100% Responsivo</h6>
+                <p class="card-text small">Perfecto en celular, tablet y escritorio sin perder funcionalidad.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Velocidad de carga -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-lightning-charge-fill display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Carga optimizada</h6>
+                <p class="card-text small">Desarrollado con buenas prácticas para una carga rápida.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formularios activos -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-ui-checks-grid display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Formularios activos</h6>
+                <p class="card-text small">Recibe contactos, solicitudes o consultas directo desde tu web.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experiencia intuitiva -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-stars display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Experiencia intuitiva</h6>
+                <p class="card-text small">Diseño pensado para facilitar la navegación del visitante.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-share-fill display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Redes Sociales</h6>
+                <p class="card-text small">Incluimos enlaces a tus redes sociales para que puedas generar tráfico en ellas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón de WhatsApp -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-whatsapp display-5 text-success mb-3"></i>
+                <h6 class="card-title">Botón WhatsApp</h6>
+                <p class="card-text small">Contacto directo e inmediato desde cualquier dispositivo.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Iconos personalizados -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-brush-fill display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Iconografía única</h6>
+                <p class="card-text small">Creamos íconos personalizados que refuercen visualmente tu identidad de marca.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traducción disponible -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-translate display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Sitio multilenguaje</h6>
+                <p class="card-text small">Puedes tener tu sitio en español e inglés si así lo necesitas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Animaciones suaves -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-magic display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Animaciones modernas</h6>
+                <p class="card-text small">Transiciones suaves que enriquecen la experiencia del usuario.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Base SEO optimizada -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-graph-up-arrow display-5 text-primary mb-3"></i>
+                <h6 class="card-title">SEO técnico</h6>
+                <p class="card-text small">Estructura del sitio preparada para posicionar en Google.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hosting incluido -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-hdd-fill display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Hosting incluido</h6>
+                <p class="card-text small">Tu sitio se aloja en servidores rápidos y seguros, sin que te preocupes de nada técnico.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dominio web -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-globe2 display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Dominio web</h6>
+                <p class="card-text small">Incluye el registro y configuración de tu dominio personalizado (.cl, .com, etc).</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Seguridad SSL -->
+          <div class="col-6 col-md-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <i class="bi bi-shield-lock-fill display-5 text-primary mb-3"></i>
+                <h6 class="card-title">Navegación segura</h6>
+                <p class="card-text small">Certificado SSL incluido para mayor confianza del usuario.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+      
+        <!-- Corporativos -->
+        <div class="tab-pane fade" id="corporativos">
+          <h3><i class="bi bi-circle"></i> Sitio Web Corporativo o Institucional</h3>
+          <p class="lead">La carta de presentación de tu empresa en internet.</p>
+          <p>Ideal para negocios que necesitan tener una presencia sólida en línea. Este tipo de sitio incluye información clave como historia, misión, servicios, equipo de trabajo y formularios de contacto. Es el primer paso para ganarte la confianza de tus clientes potenciales.</p>
+
+          <div class="row g-4 text-center mt-4">
+            <h4>¿Qué incluyen un sitio web corporativo?</h4>
+          </div>
+        </div>
+
+        <!-- Aquí continúan los demás tabs -->
+        
+    </div>
+  </div>
+</section>
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        
+        <div class="col-lg-3 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.webp" alt="">
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Diseñamos, creamos y posicionamos <br> tu marca en todo Chile</p>
+            <br>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+56 9 3107 7232</span></p>
+            <p><strong>Email:</strong> <span>contacto@accinnovations.cl</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Ir a</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#why-choose-us">¿Por qué escogernos?</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#portfolio-tabs">Portafolio</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Nuestros servicios</h4>
+          <ul>
+            <li><a href="#">Diseño y desarrollo web</a></li>
+            <li><a href="#">Posicionamiento SEO</a></li>
+            <li><a href="#">Diseño gráfico</a></li>
+            <li><a href="#">Producción audiovisual</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Trabaja con nosotros</h4>
+          <ul>
+            <li>
+              <a href="#" style="display: inline-block; line-height: 1.6; padding-top: 5px;">
+                ¿Eres creativo, apasionado por lo digital y te encanta innovar?<br>
+                Descubre oportunidades para crecer con nosotros.
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Acc Innovations</strong> <span>Todos los derechos reservados</span></p>
+      <div class="credits">
+        Diseñado por <a href="https://accinnovations.cl/">Acc Innovations</a>
+      </div>
+    </div>
+  
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabLinks = document.querySelectorAll('[data-bs-toggle="pill"]');
+  
+      tabLinks.forEach(link => {
+        link.addEventListener('shown.bs.tab', function (event) {
+          // Hacer scroll hacia el inicio de la sección con el contenido de tabs
+          const contentSection = document.getElementById('service-details');
+          if (contentSection) {
+            contentSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    });
+  </script>
+  
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
