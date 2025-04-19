@@ -2846,10 +2846,61 @@ section,
 /* Wrapper para sticky */
 .tabs-mobile-sticky {
   position: sticky;
-  top: 100px; /* Ajusta si tienes un navbar fijo arriba */
-  z-index: 10;
-  background-color: #1f242d; /* Fondo igual al de tu sección o body */
+  padding-top: 20px;
+  border-radius: 10px;
+  top: 90px; /* Ajusta si tienes un navbar fijo arriba */
+  z-index: 1;
+  background-color: rgba(50, 57, 70, 0.9); /* 90% opacidad */
+  max-width: 94%;
+  margin-inline: auto; /* centra horizontalmente */
 }
+
+.tabs-mobile-wrapper {
+  position: relative;
+}
+
+/* Estilos específicos para los tabs móviles */
+#mobile-tabs .nav-link {
+  font-size: 13px;          /* Reduce tamaño de fuente */
+  padding: 6px 12px;        /* Menos padding lateral */
+  margin-right: 0px;        /* Espacio entre pills */
+  margin-left: 30px;
+  white-space: nowrap;      /* Evita saltos de línea */
+  max-width: 240px;         /* Limita ancho para evitar que sobresalgan */
+  text-overflow: ellipsis;  /* Puntos suspensivos si el texto es muy largo */
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Flechas izquierda y derecha */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #ffffff;
+  padding: 0x 0px;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  display: none; /* Por defecto ocultas */
+}
+
+.arrow-left {
+  left: 1px;
+}
+
+.arrow-right {
+  right: 5px;
+}
+
+/* Mostrar solo en pantallas móviles */
+@media (max-width: 991px) {
+  .arrow {
+    display: block;
+  }
+}
+
 
 /* Tabs horizontales móviles */
 #mobile-tabs {
@@ -2858,7 +2909,7 @@ section,
   white-space: nowrap;
   gap: 10px;
   padding-bottom: 5px;
-
+  margin-right: 10px;
   scrollbar-width: thin;
   scrollbar-color: #00EEFF #323946;
 }

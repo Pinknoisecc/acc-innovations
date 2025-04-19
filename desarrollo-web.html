@@ -108,35 +108,37 @@
       </div>
     </div><!-- End Page Title -->
 
-<!-- Service Details Section -->
-<section id="service-details" class="service-details section">
-  <div class="container">
-    <div class="row gy-5">
+        <!-- Service Details Section -->
+        <section id="service-details" class="service-details section">
+          <div class="container">
+            <div class="row gy-5">
+
       <!-- Tabs móviles (scroll horizontal) -->
-<div class="d-lg-none mb-3" data-aos="fade-up" data-aos-delay="50">
-  <div class="tabs-mobile-sticky">
-    <div id="mobile-tabs" class="nav nav-pills flex-nowrap" role="tablist">
-      <a class="nav-link active" data-bs-toggle="pill" href="#incluido" role="tab">¿Qué incluyen nuestros sitios webs?</a>
-      <a class="nav-link" data-bs-toggle="pill" href="#corporativos" role="tab">Corporativos</a>
-      <a class="nav-link" data-bs-toggle="pill" href="#landing" role="tab">Landing</a>
-      <a class="nav-link" data-bs-toggle="pill" href="#portafolio" role="tab">Portafolios</a>
-      <a class="nav-link" data-bs-toggle="pill" href="#ecommerce" role="tab">E-commerce</a>
-      <a class="nav-link" data-bs-toggle="pill" href="#catalogo" role="tab">Catálogo</a>
-      <a class="nav-link" data-bs-toggle="pill" href="#onepage" role="tab">One Page</a>
-      <a class="nav-link" data-bs-toggle="pill" href="#reservas" role="tab">Reservas</a>
-    </div>
-  </div>
-</div>
+      <div class="tabs-mobile-sticky">
+        <div class="tabs-mobile-wrapper">
+        <div class="arrow arrow-left" onclick="scrollTabs('left')">&#10094;</div>
+         <div class="d-lg-none mb-3" data-aos="fade-up" data-aos-delay="50">
+            <div id="mobile-tabs" class="nav nav-pills flex-nowrap overflow-auto" role="tablist">
+              <a class="nav-link active" data-bs-toggle="pill" href="#incluido" role="tab">¿Qué incluyen nuestros sitios webs?</a>
+              <a class="nav-link" data-bs-toggle="pill" href="#corporativos" role="tab">Corporativos</a>
+              <a class="nav-link" data-bs-toggle="pill" href="#landing" role="tab">Landing</a>
+              <a class="nav-link" data-bs-toggle="pill" href="#portafolio" role="tab">Portafolios</a>
+              <a class="nav-link" data-bs-toggle="pill" href="#ecommerce" role="tab">E-commerce</a>
+              <a class="nav-link" data-bs-toggle="pill" href="#catalogo" role="tab">Catálogo</a>
+              <a class="nav-link" data-bs-toggle="pill" href="#onepage" role="tab">One Page</a>
+              <a class="nav-link" data-bs-toggle="pill" href="#reservas" role="tab">Reservas</a>
+            </div>
+          </div>
+        </div>
+       <div class="arrow arrow-right" onclick="scrollTabs('right')">&#10095;</div>
+      </div>
 
-
-
-
-
+      <!-- Fin de Tabs móviles -->
 
       <!-- Menú lateral (solo en escritorio) -->
       <div class="col-lg-4 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100">
         <div class="position-sticky" style="top: 150px; z-index: 1;">
-          <div class="service-box sticky-menu">
+          <div class="service-box">
             <h4>Lo que necesitas saber</h4>
             <div class="services-list nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <a class="nav-link active" id="incluido-tab" data-bs-toggle="pill" href="#incluido" role="tab">¿Qué incluyen nuestros sitios webs?</a>
@@ -423,6 +425,20 @@
       });
     });
   </script>
+
+<script>
+  function scrollTabs(direction) {
+    const container = document.getElementById("mobile-tabs");
+    const scrollAmount = 150; // ajustable
+
+    if (direction === 'left') {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  }
+</script>
+
   
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
