@@ -2843,33 +2843,21 @@ section,
   color: var(--accent-color);
 }
 
-/* Wrapper para sticky */
+/* Sticky wrapper */
 .tabs-mobile-sticky {
   position: sticky;
   padding-top: 20px;
   border-radius: 10px;
-  top: 90px; /* Ajusta si tienes un navbar fijo arriba */
+  top: 90px; /* Ajusta según tu navbar */
   z-index: 1;
   background-color: rgba(50, 57, 70, 0.9); /* 90% opacidad */
   max-width: 94%;
-  margin-inline: auto; /* centra horizontalmente */
+  margin-inline: auto; /* Centrado horizontal */
 }
 
+/* Posicionamiento relativo para flechas */
 .tabs-mobile-wrapper {
   position: relative;
-}
-
-/* Estilos específicos para los tabs móviles */
-#mobile-tabs .nav-link {
-  font-size: 13px;          /* Reduce tamaño de fuente */
-  padding: 6px 12px;        /* Menos padding lateral */
-  margin-right: 0px;        /* Espacio entre pills */
-  margin-left: 30px;
-  white-space: nowrap;      /* Evita saltos de línea */
-  max-width: 240px;         /* Limita ancho para evitar que sobresalgan */
-  text-overflow: ellipsis;  /* Puntos suspensivos si el texto es muy largo */
-  overflow: hidden;
-  display: inline-block;
 }
 
 /* Flechas izquierda y derecha */
@@ -2879,19 +2867,19 @@ section,
   transform: translateY(-50%);
   font-size: 40px;
   color: #ffffff;
-  padding: 0x 0px;
+  padding: 8px;
   z-index: 2;
   cursor: pointer;
   user-select: none;
-  display: none; /* Por defecto ocultas */
+  display: none; /* Ocultas por defecto */
 }
 
 .arrow-left {
-  left: 1px;
+  left: 4px;
 }
 
 .arrow-right {
-  right: 5px;
+  right: 17px;
 }
 
 /* Mostrar solo en pantallas móviles */
@@ -2901,17 +2889,15 @@ section,
   }
 }
 
-
-/* Tabs horizontales móviles */
+/* Contenedor de tabs con espacio interno para evitar que flechas los tapen */
 #mobile-tabs {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
   gap: 10px;
-  padding-bottom: 5px;
-  margin-right: 10px;
+  padding: 0 39px 5px; /* mismo padding a izquierda y derecha que las flechas */
   scrollbar-width: thin;
-  scrollbar-color: #00EEFF #323946;
+  scrollbar-color: #323946 #323946;
 }
 
 /* Scrollbar WebKit */
@@ -2924,7 +2910,19 @@ section,
   border-radius: 10px;
 }
 
-/* Estilos de los tabs */
+/* Estilos individuales de los nav-link (pills) */
+#mobile-tabs .nav-link {
+  font-size: 13px;
+  padding: 6px 12px;
+  margin: 0 10px;
+  white-space: nowrap;
+  max-width: 240px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Estilo visual de los nav-link en pills */
 .nav-pills .nav-link {
   background-color: #323946;
   color: #00EEFF;
@@ -2959,18 +2957,14 @@ section,
 }
 
 /* Cards services */
-
-/* Icono */
 .card i {
   color: #00EEFF !important;
 }
 
-/* Ajustar la distancia entre el icono y el título */
 .card-title {
   margin-top: 15px;
 }
 
-/* Animación de zoom suave */
 .card {
   transition: transform 0.3s ease-in-out;
   background-color: #323946;
@@ -2980,6 +2974,7 @@ section,
 .card:hover {
   transform: scale(1.05);
 }
+
 
 
 
