@@ -2975,6 +2975,14 @@ section,
   transform: scale(1.05);
 }
 
+.section-divider {
+  height: 25px;
+  background-color: #303743;
+  border-radius: 6px;
+  margin: 60px 0; /* Puedes ajustar el espaciado arriba y abajo */
+}
+
+
 
 
 
@@ -2983,4 +2991,47 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.bg-dark {
+  background-color: #1e1f25 !important;
+  padding: 10px;
+}
+
+.bg-secondary {
+  background-color: #303743 !important;
+}
+
+
+
+.get-coti {
+  color:#000000;
+  background-color: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.get-coti:hover {
+  filter: brightness(90%);
+  color: #000000;
+}
+
+
+.get-coti-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rounded-dev {
+  border-radius:  var(--bs-border-radius-xl) !important;
+  border: 8px solid var(--surface-color);
+  margin-bottom: 5%;
+}
+
+.rounded-dev-2 {
+  margin-bottom: 5%;
+  justify-content: center;
 }
